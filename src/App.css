@@ -1,0 +1,106 @@
+#root {
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+/* List Item */
+.listItem {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.listItem-item {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3em;
+    background-color: #2d2e33;
+}
+
+/* Buttons */
+.greenButton {
+    outline: none;
+    border: none;
+    background-color: #099268;
+}
+.redButton {
+    outline: none;
+    border: none;
+    background-color: #e03131;
+}
+.blueButton {
+    outline: none;
+    border: none;
+    background-color: #1864ab;
+}
+
+/* Animations */
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.slide-out {
+    opacity: 0;
+    transform: translateX(1em);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(3em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.button-text-transition {
+    transition: opacity 0.3s ease;
+}

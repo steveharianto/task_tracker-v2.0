@@ -1,0 +1,7 @@
+Time Contributed : 2 hr 54 mins
+
+- Rearrange List
+
+- Categories
+- Display Stats
+- Divide Stats into today, this week, this month, this year
