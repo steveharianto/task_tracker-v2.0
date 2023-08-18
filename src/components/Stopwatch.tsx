@@ -56,7 +56,7 @@ function Stopwatch({ itemId }: { itemId: string }) {
 
     return (
         <div style={{ display: "flex", alignItems: "center" }}>
-            <div className={initialize ? "slide-in" : "slide-out"} style={{ fontSize: "1.5em" }}>
+            <div className={initialize ? "slide-in" : "slide-out"} style={{ fontSize: "1.5em", color: running ? "#099268" : "inherit" }}>
                 {formatTime(time)}
             </div>
             <button className={`${initialize ? "slide-in" : "slide-out"} ${running ? "redButton" : "greenButton"}`} onClick={toggleRunning} style={{ height: "50%", marginLeft: "0.5em", outline: "none", border: "none", width: "5em", textAlign: "center" }}>
@@ -76,25 +76,6 @@ function Stopwatch({ itemId }: { itemId: string }) {
             >
                 {initialize ? "Save" : "Start"}
             </button>
-
-            {/* <button className={`${initialize ? "slide-in" : "slide-out-solid"} ${running ? "redButton" : "greenButton"}`} style={{ height: "50%", marginLeft: "0.5em", outline: "none", border: "none", width: "5em" }} onClick={toggleRunning}>
-                {running ? "Stop" : "Start"}
-            </button>
-            {initialize && (
-                <button
-                    style={{
-                        height: "50%",
-                        marginLeft: "0.5em",
-                        backgroundColor: "#1864ab",
-                        marginRight: "0.5em",
-                        outline: "none",
-                        border: "none",
-                    }}
-                    onClick={resetTime}
-                >
-                    Save
-                </button>
-            )} */}
         </div>
     );
 }
